@@ -6,7 +6,8 @@
       "console.log(7)",
       "console.log(\"Render\")",
       "console.log(\"Third attempt\")",
-      "console.log(\"From Basement\")"
+      "console.log(\"From Basement\")",
+      "console.log(\"Test\")"
     ]
   }
 ]
