@@ -142,3 +142,6 @@
 - Use **`git pull`** to keep your local repository up-to-date with the remote.
 - Use **branches** to separate different features or tasks.
 
+git add .
+git commit -m "Deploy backend to Render"
+git push

@@ -2,6 +2,11 @@
   {
     "name": "Counter On Hooks",
     "statement": "Create a counter with increment and decrement functionality.",
-    "solution": ["console.log(7)", "console.log(222)"]
+    "solution": [
+      "console.log(7)",
+      "console.log(\"Render\")",
+      "console.log(\"Third attempt\")",
+      "console.log(\"From Basement\")"
+    ]
   }
 ]
