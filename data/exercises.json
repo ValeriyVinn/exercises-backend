@@ -1,0 +1,7 @@
+[
+  {
+    "name": "Counter On Hooks",
+    "statement": "Create a counter with increment and decrement functionality.",
+    "solution": ["console.log(7)", "console.log(222)"]
+  }
+]
