@@ -4,7 +4,8 @@
     "statement": "Create variables to store your name, age, and whether you’re a student (true/false). Print a message to the console using these values.",
     "solution": [
       "const firstName = \"Valeriy\";\nconst age = 55;\nconst isStudent = false;\n\nconsole.log(`My name is ${firstName}, ${age} years old, my student status is \"${isStudent}\"`);",
-      "sdfdf"
+      "sdfdf",
+      "asdfad"
     ]
   }
 ]
