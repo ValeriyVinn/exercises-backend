@@ -1,0 +1,9 @@
+[
+  {
+    "name": "Task 1: Sum of odd integers",
+    "statement": "Find the sum of all odd integers between 1 and 100.",
+    "solution": [
+      "const sumOfOdd = (limit) => {\n  let sum = 0;\n  for (let number = 1; number <= limit; number += 2) {\n    sum += number;\n  }\n  console.log(sum);\n};"
+    ]
+  }
+]
