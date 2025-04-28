@@ -1,3 +1,4 @@
+🇬🇧 In English
 # Fullstack Training App – Backend
 
 This is the backend part of a fullstack training application designed for self-directed learning and practice. It is built using **Node.js** and **Express**, and it handles API requests from the frontend.
@@ -26,7 +27,9 @@ npm install
 node index.js
 ```
 
-# Fullstack Training App – Backend
+
+🇺🇦 Українською
+# Fullstack навчальний додаток – бекенд
 
 Це бекенд-частина навчального фулстек застосунку, реалізована на **Node.js** з використанням **Express**. Вона обслуговує API-запити та взаємодіє з фронтендом.
 
