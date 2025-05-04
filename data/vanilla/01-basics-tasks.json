@@ -1,9 +1,9 @@
 [
   {
-    "name": "Task 1: Personal Info Card",
+    "name": "Personal Info Card",
     "statement": "Create variables to store your name, age, and whether you’re a student (true/false). Print a message to the console using these values.",
     "solution": [
-      "const firstName = \"Valeriy\";\nconst age = 55;\nconst isStudent = false;\n\nconsole.log(`My name is ${firstName}, ${age} years old, my student status is \"${isStudent}\"`);"
+      "import { differenceInYears } from \"https://cdn.skypack.dev/date-fns/differenceInYears.mjs\";\n\nconst firstName = \"Valeriy\"\nconst age = differenceInYears(new Date(), new Date(\"1970-02-22\"));\nlet isStudent = false;\n\nconsole.log(\n  `My name is ${firstName}, ${age} years old, my student status is \"${isStudent}\"`\n);"
     ]
   },
   {
@@ -18,7 +18,22 @@
     "statement": "Create modal window",
     "solution": [
       "HTML:\n      <button class=\"open-btn\" id=\"openModal\">Send solution</button>\n      <div class=\"modal-overlay\" id=\"backdrop\">\n        <div class=\"modal\">\n          <button class=\"close-btn\" id=\"closeModal\">×</button>\n          <p>Це модальне вікно</p>\n        </div>\n      </div>\n\nCSS:\n.modal-overlay {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  opacity: 0;\n  visibility: hidden;\n  transition: opacity 0.3s ease, visibility 0.3s ease;\n}\n.modal {\n  background: white;\n  padding: 20px;\n  border-radius: 8px;\n  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);\n  position: relative;\n  min-width: 300px;\n}\n.close-btn {\n  position: absolute;\n  top: 10px;\n  right: 10px;\n  background: none;\n  border: none;\n  font-size: 20px;\n  cursor: pointer;\n}\n.modal-overlay.active {\n  opacity: 1;\n  visibility: visible;\n}\n\nJS:\nconst openModalBtn = document.getElementById(\"openModal\");\nconst closeModalBtn = document.getElementById(\"closeModal\");\nconst backdrop = document.getElementById(\"backdrop\");\n\nfunction openModal() {\n  backdrop.classList.add(\"active\");\n}\nfunction closeModal() {\n  backdrop.classList.remove(\"active\");\n}\nopenModalBtn.addEventListener(\"click\", openModal);\ncloseModalBtn.addEventListener(\"click\", closeModal);\nbackdrop.addEventListener(\"click\", (e) => {\n  if (e.target === backdrop) {\n    closeModal();\n  }\n});\ndocument.addEventListener(\"keydown\", (e) => {\n  if (e.key === \"Escape\") {\n    closeModal();\n  }\n});",
-      "console.log(\"Test\")"
+      "console.log(\"Test\")",
+      "console.log(\"Test 2\")"
+    ]
+  },
+  {
+    "name": "Type Checker",
+    "statement": "Create variables of each primitive type (string, number, boolean, undefined, null). Use typeof to print the type of each.",
+    "solution": [
+      "const number = 8;\nconst string = \"Hello Cake\";\nconst isMorning = true;\nlet find;\nconst value = null;\n\nconsole.log(\n  typeof number,\n  typeof string,\n  typeof isMorning,\n  typeof find,\n  typeof value\n);"
+    ]
+  },
+  {
+    "name": "Price Calculator",
+    "statement": "Create two number variables: price and quantity. Multiply them to find the total cost. Store the result in a third variable and log it.",
+    "solution": [
+      "const price = 34;\nconst quantity = 4;\nconst totalCost = price * quantity;\n\nconsole.log(totalCost);"
     ]
   }
 ]
