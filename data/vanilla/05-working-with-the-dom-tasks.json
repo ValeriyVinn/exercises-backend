@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "List data in the console",
+    "statement": "Log to the console the number and text of the headers according to the condition.",
+    "solution": [
+      "const numberOfCategories = document.querySelectorAll(\".item\");\n\nconsole.log(`Number of categories: ${numberOfCategories.length}`);\n\nnumberOfCategories.forEach((elem) => {\n  console.log(`Category: ${elem.firstElementChild.textContent}`);\n  console.log(`Elements: ${elem.lastElementChild.children.length}`);\n});"
+    ]
+  },
+  {
+    "name": "Toggle background color",
+    "statement": "There are several buttons on a page. Write a script that toggled the color of the button to yellow/black when clicked.",
+    "solution": [
+      "const highlightButtons = document.querySelectorAll(\".action-btn\");\n\nhighlightButtons.forEach((btn) => {\n  btn.addEventListener(\"click\", () => {\n    btn.classList.toggle(\"yellow\");\n  });\n});"
+    ]
+  }
+]
