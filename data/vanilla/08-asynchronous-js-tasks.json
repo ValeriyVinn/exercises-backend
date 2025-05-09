@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "Belated greetings",
+    "statement": "Write a function greet(name, callback) that takes a name and a callback function. Print a greeting after 3 seconds.",
+    "solution": [
+      "adfadsffunction greet(name, callback) {\n  console.log(`Hello, ${name}!`);\n  setTimeout(() => {\n    callback();\n  }, 3000);\n}\n\ngreet(\"Alex\", () => {\n  console.log(\"Greeting complete!\");\n});"
+    ]
+  }
+]
