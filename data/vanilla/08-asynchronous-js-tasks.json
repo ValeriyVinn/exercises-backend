@@ -5,5 +5,12 @@
     "solution": [
       "adfadsffunction greet(name, callback) {\n  console.log(`Hello, ${name}!`);\n  setTimeout(() => {\n    callback();\n  }, 3000);\n}\n\ngreet(\"Alex\", () => {\n  console.log(\"Greeting complete!\");\n});"
     ]
+  },
+  {
+    "name": "Processing an array with callback",
+    "statement": "Write a function processArray(arr, callback) that processes each element of the array through a callback function.",
+    "solution": [
+      "function processArray(arr, callback) {\n  arr.forEach((item, index) => {\n    callback(item, index);\n  });\n}\n\nprocessArray([1, 2, 3], (item, index) => {\n  console.log(`Item ${index + 1}: ${item}`);\n});"
+    ]
   }
 ]
