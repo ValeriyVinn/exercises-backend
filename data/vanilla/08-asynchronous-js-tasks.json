@@ -12,5 +12,75 @@
     "solution": [
       "function processArray(arr, callback) {\n  arr.forEach((item, index) => {\n    callback(item, index);\n  });\n}\n\nprocessArray([1, 2, 3], (item, index) => {\n  console.log(`Item ${index + 1}: ${item}`);\n});"
     ]
+  },
+  {
+    "name": "Countdown timer",
+    "statement": "Create a function countdown(start, callback) that counts down from a given number to zero at 1 second intervals.",
+    "solution": [
+      "function countdown(start, callback) {\n  let current = start;\n  const timer = setInterval(() => {\n    console.log(current);\n    current--;\n    if (current < 0) {\n      clearInterval(timer);\n      callback();\n    }\n  }, 1000);\n}\n\ncountdown(5, () => {\n  console.log(\"Countdown finished!\");\n});"
+    ]
+  },
+  {
+    "name": "Delayed promise",
+    "statement": "Write a function delay(ms) that returns a promise that will be fulfilled after a given time.",
+    "solution": [
+      "function delay(ms) {\n  return new Promise((resolve) => setTimeout(resolve, ms));\n}\n\ndelay(1000).then(() => console.log(\"1 second passed\"));"
+    ]
+  },
+  {
+    "name": "Number check",
+    "statement": "Create a function isEven(number) that returns a promise. If the number is even, the promise is executed, otherwise, it is rejected.",
+    "solution": [
+      "function isEven(number) {\n  return new Promise((resolve, reject) => {\n    if (number % 2 === 0) {\n      resolve(\"Even number\");\n    } else {\n      reject(\"Odd number\");\n    }\n  });\n}\n\nisEven(12).then(console.log).catch(console.error);"
+    ]
+  },
+  {
+    "name": "Sequence of promises",
+    "statement": "Create a sequence of two promises: the first waits for 1 second, the second for 2 seconds.",
+    "solution": [
+      "function wait(seconds) {\n  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));\n}\n\nwait(1)\n  .then(() => {\n    console.log(\"1 second passed\");\n    return wait(2);\n  })\n  .then(() => console.log(\"2 more seconds passed\"));"
+    ]
+  },
+  {
+    "name": "Asynchronous greeting",
+    "statement": "Write an asynchronous greet function with a delay of 1 second.",
+    "solution": [
+      "async function greet() {\n  await new Promise((resolve) => setTimeout(resolve, 1000));\n  console.log(\"Hello after 1 second!\");\n}\n\ngreet();"
+    ]
+  },
+  {
+    "name": "Parity check",
+    "statement": "Implement a checkNumber function that returns the result after 2 seconds.",
+    "solution": [
+      "async function checkNumber(num) {\n  return new Promise((resolve) =>\n    setTimeout(() => resolve(num % 2 === 0 ? \"Even\" : \"Odd\"), 2000)\n  );\n}\n\nasync function run() {\n  const result = await checkNumber(5);\n  console.log(result);\n}\n\nrun();"
+    ]
+  },
+  {
+    "name": "Consistent waiting",
+    "statement": "Create two asynchronous functions with different delays and call them sequentially.",
+    "solution": [
+      "async function firstTask() {\n  await new Promise((resolve) => setTimeout(resolve, 1000));\n  console.log(\"First task done\");\n}\n\nasync function secondTask() {\n  await new Promise((resolve) => setTimeout(resolve, 2000));\n  console.log(\"Second task done\");\n}\n\nasync function runTasks() {\n  await firstTask();\n  await secondTask();\n}\n\nrunTasks();"
+    ]
+  },
+  {
+    "name": "Getting data from the API",
+    "statement": "Get a list of users from the API https://jsonplaceholder.typicode.com/users and print the names.",
+    "solution": [
+      "async function fetchUsers() {\n  const response = await fetch(\"https://jsonplaceholder.typicode.com/users\");\n  const users = await response.json();\n  users.forEach((user) => console.log(user.name));\n}\n\nfetchUsers();"
+    ]
+  },
+  {
+    "name": "Sending data",
+    "statement": "Send a POST request with the user object and print the response.",
+    "solution": [
+      "async function createUser(data) {\n  const response = await fetch(\"https://jsonplaceholder.typicode.com/users\", {\n    method: \"POST\",\n    headers: {\n      \"Content-Type\": \"application/json\",\n    },\n    body: JSON.stringify(data),\n  });\n  const result = await response.json();\n  console.log(result);\n}\n\ncreateUser({ name: \"John\", age: 30 });"
+    ]
+  },
+  {
+    "name": "Checking the status of the response",
+    "statement": "Implement a function that displays the response status after a request.",
+    "solution": [
+      "async function fetchData(url) {\n  try {\n    const response = await fetch(url);\n    console.log(`Status: ${response.status}`);\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error(\"Fetch failed:\", error);\n  }\n}\n\nfetchData(\"https://jsonplaceholder.typicode.com/todos/1\");"
+    ]
   }
 ]
