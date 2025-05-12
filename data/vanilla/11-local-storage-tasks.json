@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "name": "Saving username",
+    "statement": "Write a function saveName(name) that saves the username to localStorage. Also create a function getName() that prints the saved name or reports that the name is not specified.",
+    "solution": [
+      "function saveName(name) {\n  localStorage.setItem(\"username\", name);\n  console.log(`Name saved: ${name}`);\n}\n\nfunction getName() {\n  const name = localStorage.getItem(\"username\");\n  console.log(name ? `Hello, ${name}!` : \"No name found.\");\n}\n\n// Збереження та отримання імені\nsaveName(\"Alex\");\ngetName();"
+    ]
+  },
+  {
+    "name": "Page view counter",
+    "statement": "Every time the page loads, increment a counter in sessionStorage and print its value. If the page is closed and reopened, the counter should reset to zero.",
+    "solution": [
+      "function visitCounter() {\n  let count = sessionStorage.getItem(\"visitCount\") || 0;\n  count = Number(count) + 1;\n  sessionStorage.setItem(\"visitCount\", count);\n  console.log(`Visit count: ${count}`);\n}\n\nvisitCounter();"
+    ]
+  },
+  {
+    "name": "Saving the site theme",
+    "statement": "Implement switching the site theme ('light' / 'dark') and saving the selection in localStorage. When loading the page, set the previously saved theme.",
+    "solution": [
+      "function toggleTheme() {\n    const currentTheme = localStorage.getItem(\"theme\") || \"light\";\n    const newTheme = currentTheme === \"light\" ? \"dark\" : \"light\";\n    localStorage.setItem(\"theme\", newTheme);\n    document.body.className = newTheme;\n    console.log(`Theme switched to: ${newTheme}`);\n}\n\n// Встановлення теми при завантаженні сторінки\ndocument.body.className = localStorage.getItem(\"theme\") || \"light\";\ndocument.querySelector(\"#toggle-btn\").addEventListener(\"click\", toggleTheme);"
+    ]
+  },
+  {
+    "name": "Saving an object to localStorage",
+    "statement": "Save the user object with name and age to localStorage in JSON format. Print it back to the console as an object.",
+    "solution": [
+      "const user = { name: \"John\", age: 30 };\nlocalStorage.setItem(\"user\", JSON.stringify(user));\n\nconst storedUser = JSON.parse(localStorage.getItem(\"user\"));\nconsole.log(storedUser);"
+    ]
+  },
+  {
+    "name": "Getting an array from localStorage",
+    "statement": "Store an array of numbers [1, 2, 3, 4, 5] in localStorage. Retrieve it and print the sum of the elements.",
+    "solution": [
+      "const numbers = [1, 2, 3, 4, 5];\nlocalStorage.setItem(\"numbers\", JSON.stringify(numbers));\n\nconst storedNumbers = JSON.parse(localStorage.getItem(\"numbers\"));\nconst sum = storedNumbers.reduce((acc, num) => acc + num, 0);\nconsole.log(`Sum of numbers: ${sum}`);"
+    ]
+  },
+  {
+    "name": "Saving a task list",
+    "statement": "Implement the addTask(task) and getTasks() functions to work with the list of tasks in localStorage. Add a new task to the array. Get all saved tasks.",
+    "solution": [
+      "function addTask(task) {\n    const tasks = JSON.parse(localStorage.getItem(\"tasks\")) || [];\n    tasks.push(task);\n    localStorage.setItem(\"tasks\", JSON.stringify(tasks));\n    console.log(`Task added: ${task}`);\n}\n\nfunction getTasks() {\n    const tasks = JSON.parse(localStorage.getItem(\"tasks\")) || [];\n    console.log(\"Tasks:\", tasks);\n}\n\n// Додавання завдання та виведення списку\naddTask(\"Learn JS\");\naddTask(\"Build a project\");\ngetTasks();"
+    ]
+  }
+]
