@@ -82,5 +82,12 @@
     "solution": [
       "async function fetchData(url) {\n  try {\n    const response = await fetch(url);\n    console.log(`Status: ${response.status}`);\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error(\"Fetch failed:\", error);\n  }\n}\n\nfetchData(\"https://jsonplaceholder.typicode.com/todos/1\");"
     ]
+  },
+  {
+    "name": "Do math",
+    "statement": "Write a function that takes two values ​​and the callback for mathematical operations on them.",
+    "solution": [
+      "const doMath = function (a, b, callback) {\n  console.log(callback(a, b));\n};\nfunction add(a, b) {\n  return a + b;\n}\nfunction subtract(a, b) {\n  return a - b;\n}\nfunction devide(a, b) {\n  return a / b;\n}\nfunction multiply(a, b) {\n  return a * b;\n}\n\ndoMath(5, 6, add);\ndoMath(22, 4, subtract);\ndoMath(154, 11, devide);\ndoMath(7, 3, multiply);"
+    ]
   }
 ]
