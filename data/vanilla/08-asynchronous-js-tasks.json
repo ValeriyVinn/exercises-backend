@@ -89,5 +89,40 @@
     "solution": [
       "const doMath = function (a, b, callback) {\n  console.log(callback(a, b));\n};\nfunction add(a, b) {\n  return a + b;\n}\nfunction subtract(a, b) {\n  return a - b;\n}\nfunction devide(a, b) {\n  return a / b;\n}\nfunction multiply(a, b) {\n  return a * b;\n}\n\ndoMath(5, 6, add);\ndoMath(22, 4, subtract);\ndoMath(154, 11, devide);\ndoMath(7, 3, multiply);"
     ]
+  },
+  {
+    "name": "Counter with memory",
+    "statement": "Implement a function createCounter() that returns another function. This inner function increments the counter by 1 each time it is called.",
+    "solution": [
+      "function createCounter() {\n  let count = 0;\n  return function () {\n    count++;\n    console.log(`Current count: ${count}`);\n  };\n}\n\nconst counter = createCounter();\ncounter(); // Current count: 1\ncounter(); // Current count: 2\ncounter(); // Current count: 3"
+    ]
+  },
+  {
+    "name": "Random number generator in range",
+    "statement": "Write a function randomInRange(min, max) that returns another function to generate random numbers in a given range.",
+    "solution": [
+      "function randomInRange(min, max) {\n  return function () {\n    return Math.floor(Math.random() * (max - min + 1)) + min;\n  };\n}\n\nconst randomFrom1To10 = randomInRange(1, 10);\nconsole.log(randomFrom1To10()); // Наприклад, 7\nconsole.log(randomFrom1To10()); // Наприклад, 3"
+    ]
+  },
+  {
+    "name": "Saving the settings state",
+    "statement": "Implement a settingsManager() function that stores and updates settings. The settings are passed as an object.",
+    "solution": [
+      "function settingsManager() {\n  let settings = {};\n\n  return {\n    set: function (key, value) {\n      settings[key] = value;\n      console.log(`Setting updated: ${key} = ${value}`);\n    },\n    get: function (key) {\n      return settings[key] || \"Not found\";\n    },\n    getAll: function () {\n      return { ...settings };\n    },\n  };\n}\n\nconst manager = settingsManager();\nmanager.set(\"theme\", \"dark\"); // Setting updated: theme = dark\nmanager.set(\"volume\", 50); // Setting updated: volume = 50\nconsole.log(manager.get(\"theme\")); // dark\nconsole.log(manager.getAll()); // { theme: \"dark\", volume: 50 }"
+    ]
+  },
+  {
+    "name": "Filter",
+    "statement": "Write a function to filter an array that takes two parameters - an array and a callback that filters this array.",
+    "solution": [
+      "const filter = function (array, test) {\n  const filteredArray = [];\n  for (const el of array) {\n    const passed = test(el);\n    if (passed) {\n      filteredArray.push(el);\n    }\n  }\n  return filteredArray;\n};\n\nfunction positive(value) {\n  return value > 0;\n}\nfunction negative(value) {\n  return value < 0;\n}\n\nconst result1 = filter([3, -12, 34, -2], positive);\nconsole.log(result1);\nconst result2 = filter([4, -64, 11, -56, 67, -2], negative);\nconsole.log(result2);\n\nconst fruits = [\n  { name: \"apple\", quantity: 200, isFresh: true },\n  { name: \"grape\", quantity: 150, isFresh: false },\n  { name: \"banana\", quantity: 100, isFresh: true },\n  { name: \"orange\", quantity: 400, isFresh: true },\n  { name: \"pear\", quantity: 15, isFresh: false },\n];\nconst freshFruits = function (fruit) {\n  return fruit.isFresh === true;\n};\nconst result3 = filter(fruits, freshFruits);\nconsole.log(result3);"
+    ]
+  },
+  {
+    "name": "Make Sheff",
+    "statement": "Write a function 'MakeCheff' with a parameter name that returns a function 'MakeDish' with a parameter dish so that when 'MakeCheff' is called, the console will display the string '{name} cooks {dish}'",
+    "solution": [
+      "const makeSheff = function (name) {\n    const makeDish = function (dish) {\n        console.log(`${name} cooks ${dish}`)\n    }\n    return makeDish\n}\n\nconst robert = makeSheff(\"Robert\")\nconst zlatan = makeSheff(\"Zlatan\")\n\nrobert(\"spaghetti\")\nzlatan(\"soup\")"
+    ]
   }
 ]
