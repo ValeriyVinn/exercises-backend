@@ -5,5 +5,33 @@
     "solution": [
       "function isWeekend(date) {\n  const day = date.getDay(); // 0 = Sunday, 6 = Saturday\n  return day === 0 || day === 6;\n}\n\nconst someDate = new Date(\"2025-05-24\"); // субота\nconsole.log(isWeekend(someDate) ? \"Вихідний день\" : \"Робочий день\");"
     ]
+  },
+  {
+    "name": "Stand in days between two dates",
+    "statement": "Calculate how many days are left until the New Year.",
+    "solution": [
+      "const today = new Date();\nconst newYear = new Date(today.getFullYear() + 1, 0, 1); \n\nconst diffInMs = newYear - today;\nconst diffInDays = Math.ceil(diffInMs / (1000 * 60 * 60 * 24));\n\nconsole.log(`До Нового року залишилось: ${diffInDays} днів`);"
+    ]
+  },
+  {
+    "name": "Countdown timer (to event).",
+    "statement": "Implement a simple countdown to a specific date.",
+    "solution": [
+      "const eventDate = new Date(\"2025-06-01T00:00:00\");\n\nfunction countdown() {\n  const now = new Date();\n  const diff = eventDate - now;\n\n  if (diff <= 0) {\n    console.log(\"Подія вже настала!\");\n    clearInterval(timer);\n    return;\n  }\n\n  const days = Math.floor(diff / (1000 * 60 * 60 * 24));\n  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);\n  const minutes = Math.floor((diff / (1000 * 60)) % 60);\n  const seconds = Math.floor((diff / 1000) % 60);\n\n  console.log(`Залишилось: ${days}д ${hours}г ${minutes}хв ${seconds}с`);\n}\n\nconst timer = setInterval(countdown, 1000);"
+    ]
+  },
+  {
+    "name": "Сlock in the interface",
+    "statement": "Create a clock that updates every second in the browser.",
+    "solution": [
+      "function updateClock() {\n    const now = new Date();\n    const time = now.toLocaleTimeString();\n    document.getElementById('clock').textContent = time;\n}\n\nsetInterval(updateClock, 1000);\nupdateClock(); // одразу показати перше значення"
+    ]
+  },
+  {
+    "name": "User's last login date",
+    "statement": "Retrieve the user's last login date from localStorage.",
+    "solution": [
+      "const lastVisit = localStorage.getItem(\"lastVisit\");\n\nif (lastVisit) {\n  console.log(\n    `Ваш останній візит був: ${new Date(lastVisit).toLocaleString(\"uk-UA\")}`\n  );\n} else {\n  console.log(\"Вітаємо! Це ваш перший візит.\");\n}\n\nlocalStorage.setItem(\"lastVisit\", new Date());"
+    ]
   }
 ]
