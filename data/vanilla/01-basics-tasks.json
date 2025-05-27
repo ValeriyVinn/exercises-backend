@@ -3,7 +3,8 @@
     "name": "Personal Info Card",
     "statement": "Create variables to store your name, age, and whether you’re a student (true/false). Print a message to the console using these values.",
     "solution": [
-      "import { differenceInYears } from \"https://cdn.skypack.dev/date-fns/differenceInYears.mjs\";\n\nconst firstName = \"Valeriy\"\nconst age = differenceInYears(new Date(), new Date(\"1970-02-22\"));\nlet isStudent = false;\n\nconsole.log(\n  `My name is ${firstName}, ${age} years old, my student status is \"${isStudent}\"`\n);"
+      "import { differenceInYears } from \"https://cdn.skypack.dev/date-fns/differenceInYears.mjs\";\n\nconst firstName = \"Valeriy\"\nconst age = differenceInYears(new Date(), new Date(\"1970-02-22\"));\nlet isStudent = false;\n\nconsole.log(\n  `My name is ${firstName}, ${age} years old, my student status is \"${isStudent}\"`\n);",
+      "qewrqwer"
     ]
   },
   {

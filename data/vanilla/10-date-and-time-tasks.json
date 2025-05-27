@@ -17,14 +17,17 @@
     "name": "Countdown timer (to event).",
     "statement": "Implement a simple countdown to a specific date.",
     "solution": [
-      "const eventDate = new Date(\"2025-06-01T00:00:00\");\n\nfunction countdown() {\n  const now = new Date();\n  const diff = eventDate - now;\n\n  if (diff <= 0) {\n    console.log(\"Подія вже настала!\");\n    clearInterval(timer);\n    return;\n  }\n\n  const days = Math.floor(diff / (1000 * 60 * 60 * 24));\n  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);\n  const minutes = Math.floor((diff / (1000 * 60)) % 60);\n  const seconds = Math.floor((diff / 1000) % 60);\n\n  console.log(`Залишилось: ${days}д ${hours}г ${minutes}хв ${seconds}с`);\n}\n\nconst timer = setInterval(countdown, 1000);"
+      "const eventDate = new Date(\"2025-06-01T00:00:00\");\n\nfunction countdown() {\n  const now = new Date();\n  const diff = eventDate - now;\n\n  if (diff <= 0) {\n    console.log(\"Подія вже настала!\");\n    clearInterval(timer);\n    return;\n  }\n\n  const days = Math.floor(diff / (1000 * 60 * 60 * 24));\n  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);\n  const minutes = Math.floor((diff / (1000 * 60)) % 60);\n  const seconds = Math.floor((diff / 1000) % 60);\n\n  console.log(`Залишилось: ${days}д ${hours}г ${minutes}хв ${seconds}с`);\n}\n\nconst timer = setInterval(countdown, 1000);",
+      "const eventDate = new Date(\"2025-05-24 22:58:00\");\n\nconst el = document.getElementById(\"countdown-timer\");\nconsole.log(el.textContent);\n\nfunction countdown() {\n  const now = new Date();\n  const diff = eventDate - now;\n\n  if (diff <= 0) {\n    clearInterval(timer);\n    return \"Торба\";\n  }\n\n  const days = Math.floor(diff / (1000 * 60 * 60 * 24));\n  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);\n  const minutes = Math.floor((diff / (1000 * 60)) % 60);\n  const seconds = Math.floor((diff / 1000) % 60);\n\n  return `${String(days).padStart(2, \"0\")}:${String(hours).padStart(2,\"0\")}:${String(minutes).padStart(2, \"0\")}:${String(seconds).padStart(2, \"0\")}`;\n}\nconst timer = setInterval(() => {\n  el.textContent = countdown();\n}, 1000);"
     ]
   },
   {
     "name": "Сlock in the interface",
     "statement": "Create a clock that updates every second in the browser.",
     "solution": [
-      "function updateClock() {\n    const now = new Date();\n    const time = now.toLocaleTimeString();\n    document.getElementById('clock').textContent = time;\n}\n\nsetInterval(updateClock, 1000);\nupdateClock(); // одразу показати перше значення"
+      "function updateClock() {\n    const now = new Date();\n    const time = now.toLocaleTimeString();\n    document.getElementById('clock').textContent = time;\n}\n\nsetInterval(updateClock, 1000);\nupdateClock(); // одразу показати перше значення",
+      "function clock() {\n  document.getElementById(\"clock\").textContent=new Date().toLocaleTimeString()\n}\n\nsetInterval(clock, 1000)",
+      "const clockEl = document.getElementById(\"clock\")\n\nsetInterval(() => {\n    clockEl.textContent=new Date().toLocaleTimeString()\n}, 1000)"
     ]
   },
   {

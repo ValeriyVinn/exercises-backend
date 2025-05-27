@@ -5,7 +5,7 @@ const path = require("path");
 const router = express.Router();
 
 const getFilePath = (fileKey) =>
-  path.join(__dirname, `../../data/vanilla/${fileKey}-tasks.json`);
+  path.join(__dirname, `../../data/vanilla/html-css/${fileKey}-tasks.json`);
 
 const readData = (fileKey) => {
   const filePath = getFilePath(fileKey);
