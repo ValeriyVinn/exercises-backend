@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "name": "Icons on the product card",
+    "statement": "Position the block of icons on top of the image.",
+    "solution": [
+      "йукйу"
+    ]
+  },
+  {
+    "name": "Overlay",
+    "statement": "Create a decorative overlay on top of an image.",
+    "solution": [
+      "Overlay"
+    ]
+  }
+]
