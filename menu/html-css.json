@@ -1,0 +1,303 @@
+[
+  {
+    "title": "Basics and Structure",
+    "path": "vanilla/01-basics/basics.html",
+    "children": [
+      {
+        "title": "HTML Basics",
+        "path": "/vanilla/01-basics/basics.html",
+        "tasks": [
+          {
+            "title": "Task 1",
+            "path": ""
+          },
+          {
+            "title": "Task 2",
+            "path": ""
+          },
+          {
+            "title": "Task 3",
+            "path": ""
+          }
+        ]
+      },
+      {
+        "title": "HTML Semantics",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "CSS Selectors and Color",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Text, Fonts, and Typography",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Layout and CSS Models",
+    "children": [
+      {
+        "title": "Box Model",
+        "tasks": [
+          {
+            "title": "Task 1",
+            "path": ""
+          },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Positioning (position, z-index)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Flexbox",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Grid Layout",
+        "tasks": [
+          {
+            "title": "Basic 2v2 grid",
+            "path": "/vanilla/html-css/02-layout-and-css-models/04-grid-layout/basic-2v2-grid/basic-2v2-grid.html"
+          },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Flexbox vs Grid",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Interactivity and Effects",
+    "children": [
+      {
+        "title": "Pseudo-elements and Pseudo-classes",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Backgrounds and Gradients",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Decorative Elements",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Vector Graphics (SVG, Sprites)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Animations and Transitions",
+        "tasks": [
+          {
+            "title": "Icons on the product card",
+            "path": "/vanilla/html-css/03-interactivity-and-effects/05-animations-and-transitions/icons-on-the-product-card/icons-on-the-product-card.html"
+          },
+          {
+            "title": "Overlay",
+            "path": "/vanilla/html-css/03-interactivity-and-effects/05-animations-and-transitions/overlay/overlay.html"
+          },
+          {
+            "title": "Fixed header",
+            "path": "/vanilla/html-css/03-interactivity-and-effects/05-animations-and-transitions/fixed-header/fixed-header.html"
+          },
+          {
+            "title": "Modal window",
+            "path": "/vanilla/html-css/03-interactivity-and-effects/05-animations-and-transitions/modal-window/modal-window.html"
+          },
+          {
+            "title": "Dropdown menu",
+            "path": "/vanilla/html-css/03-interactivity-and-effects/05-animations-and-transitions/dropdown-menu/dropdown-menu.html"
+          }
+        ]
+      },
+      {
+        "title": "Positioned Elements",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Forms and Interaction",
+    "children": [
+      {
+        "title": "Form Elements",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Form Validation",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Accessibility (a11y)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Code Organization and Maintenance",
+    "children": [
+      {
+        "title": "CSS Methodologies (BEM, etc.)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Project Architecture and CSS Structure",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "SASS Preprocessor",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "CSS Variables (--var)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Responsiveness and Graphics",
+    "children": [
+      {
+        "title": "Responsive Layout",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Responsive Graphics",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Fonts and Icons (Google Fonts, Font Awesome)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Tools and Optimization",
+    "children": [
+      {
+        "title": "DevTools and CSS Debugging",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "CSS Optimization",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "PostCSS and Autoprefixer",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "CSS Modules / CSS-in-JS (Overview)",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      }
+    ]
+  }
+]
