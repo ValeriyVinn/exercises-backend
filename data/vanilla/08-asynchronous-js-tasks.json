@@ -17,7 +17,7 @@
     "name": "Countdown timer",
     "statement": "Create a function countdown(start, callback) that counts down from a given number to zero at 1 second intervals.",
     "solution": [
-      "function countdown(start, callback) {\n  let current = start;\n  const timer = setInterval(() => {\n    console.log(current);\n    current--;\n    if (current < 0) {\n      clearInterval(timer);\n      callback();\n    }\n  }, 1000);\n}\n\ncountdown(5, () => {\n  console.log(\"Countdown finished!\");\n});"
+      "const countdownTimerEl = document.getElementById(\"countdown-timer\");\n\nconst countdownTimer = function (start, callback) {\n  let current = start;\n  countdownTimerEl.textContent = \"Get ready?\";\n  const timer = setInterval(() => {\n    countdownTimerEl.textContent = current;\n    current -= 1;\n    if (current < 0) {\n      clearInterval(timer);\n      callback();\n    }\n  }, 1000);\n};\n\ncountdownTimer(10, () => {\n  countdownTimerEl.textContent = \"Let's go!\";\n});"
     ]
   },
   {
@@ -38,7 +38,8 @@
     "name": "Sequence of promises",
     "statement": "Create a sequence of two promises: the first waits for 1 second, the second for 2 seconds.",
     "solution": [
-      "function wait(seconds) {\n  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));\n}\n\nwait(1)\n  .then(() => {\n    console.log(\"1 second passed\");\n    return wait(2);\n  })\n  .then(() => console.log(\"2 more seconds passed\"));"
+      "function wait(seconds) {\n  return new Promise((resolve) => setTimeout(resolve, seconds * 1000));\n}\n\nwait(1)\n  .then(() => {\n    console.log(\"1 second passed\");\n    return wait(2);\n  })\n  .then(() => console.log(\"2 more seconds passed\"));",
+      "function wait(name, seconds) {\n  return new Promise((resolve, reject) => {\n    setTimeout(() => {\n      if (Math.random() > 0.5) {\n        resolve(`${name}: Yes`);\n      } else {\n        reject(`${name}: No`);\n      }\n    }, seconds * 1000);\n  });\n}\n\nwait(\"Step 1\", 2)\n  .then((msg) => {\n    console.log(msg);\n    return wait(\"Step 2\", 3);\n  })\n  .then((msg) => {\n    console.log(msg);\n  })\n  .catch((err) => {\n    console.error(\"❌\", err);\n  });"
     ]
   },
   {
