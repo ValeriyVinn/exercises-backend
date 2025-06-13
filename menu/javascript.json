@@ -378,7 +378,7 @@
       {
         "title": "String manipulation",
         "tasks": [
-          { "title": "Task 1", "path": "" },
+          { "title": "Palindrome", "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/palindrome/palindrome.html" },
           { "title": "Task 2", "path": "" },
           { "title": "Task 3", "path": "" }
         ]

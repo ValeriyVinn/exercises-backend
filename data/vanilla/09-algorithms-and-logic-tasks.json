@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "name": "Palindrome",
+    "statement": "Check if a string is a palindrome.",
+    "solution": [
+      "function isPalindrome(str) {\n  if (str.toLowerCase().split(\"\").reverse().join(\"\") === str.toLowerCase()) {\n    console.log(`${str} is a palindrome`);\n  } else {\n    console.log(`${str} is not a palindrome`);\n  }\n}\n\nisPalindrome(\"Racecar\");\nisPalindrome(\"Hello\");"
+    ]
+  }
+]
