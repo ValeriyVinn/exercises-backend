@@ -378,9 +378,30 @@
       {
         "title": "String manipulation",
         "tasks": [
-          { "title": "Palindrome", "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/palindrome/palindrome.html" },
-          { "title": "Task 2", "path": "" },
-          { "title": "Task 3", "path": "" }
+          {
+            "title": "Palindrome",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/palindrome/palindrome.html"
+          },
+          {
+            "title": "Number of specific char",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/number-of-specific-char/number-of-specific-char.html"
+          },
+          {
+            "title": "Reverse string",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/reverse-string/reverse-string.html"
+          },
+          {
+            "title": "Simple replacement",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/simple-replacement/simple-replacement.html"
+          },
+          {
+            "title": "Format a string",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/format-a-string/format-a-string.html"
+          },
+          {
+            "title": "Or only unique",
+            "path": "/vanilla/java-script/09-algorithms-and-logic/01-string-manipulation/or-only-unique/or-only-unique.html"
+          }
         ]
       },
       {

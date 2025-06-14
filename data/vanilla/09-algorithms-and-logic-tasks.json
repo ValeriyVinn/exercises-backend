@@ -5,5 +5,19 @@
     "solution": [
       "function isPalindrome(str) {\n  if (str.toLowerCase().split(\"\").reverse().join(\"\") === str.toLowerCase()) {\n    console.log(`${str} is a palindrome`);\n  } else {\n    console.log(`${str} is not a palindrome`);\n  }\n}\n\nisPalindrome(\"Racecar\");\nisPalindrome(\"Hello\");"
     ]
+  },
+  {
+    "name": "Number of specific char",
+    "statement": "Count the number of occurrences of a specific character.",
+    "solution": [
+      "function countChar(str, char) {\n  return str.toLowerCase().split(\"\").filter((ch) => ch === char).length;\n}\n\nconsole.log(countChar(\"Ababagalamaga\", \"a\"));\nconsole.log(\n  countChar(\"Count the number of occurrences of a specific character.\", \" \")\n);"
+    ]
+  },
+  {
+    "name": "Reverse the string",
+    "statement": "Reverse the string.",
+    "solution": [
+      "function reverseString(str, delimiter) {\nreturn str.split(delimiter).reverse().join(delimiter)  \n}\n\nconsole.log(reverseString(\"Racecar\", \"\"))\nconsole.log(reverseString(\"one two three\", \" \"))"
+    ]
   }
 ]
