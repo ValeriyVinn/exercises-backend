@@ -3,7 +3,8 @@
     "name": "Counter On Hooks",
     "statement": "Create a counter with increment and decrement functionality.",
     "solution": [
-      "import React, { useState } from \"react\";\nimport css from \"./CounterSolution.module.css\";\n\n\nconst CounterSolution = ({ initialValue = 0 }) => {\n  const [value, setValue] = useState(initialValue);\n\n  const handleIncrement = () => {\n    setValue((prevValue) => prevValue + 1);\n  };\n\n  const handleDecrement = () => {\n    setValue((prevValue) => prevValue - 1);\n  };\n\n  return (\n    <div className={css.counter}>\n      <span className={css.counter__value}>{value}</span>\n\n      <div className={css.counter__controls}>\n        <button type=\"button\" onClick={handleDecrement}>\n          Decrease by 1\n        </button>\n        <button type=\"button\" onClick={handleIncrement}>\n          Increase by 1\n        </button>\n      </div>\n    </div>\n  );\n};\n\nexport default CounterSolution;"
+      "import React, { useState } from \"react\";\nimport css from \"./CounterSolution.module.css\";\n\n\nconst CounterSolution = ({ initialValue = 0 }) => {\n  const [value, setValue] = useState(initialValue);\n\n  const handleIncrement = () => {\n    setValue((prevValue) => prevValue + 1);\n  };\n\n  const handleDecrement = () => {\n    setValue((prevValue) => prevValue - 1);\n  };\n\n  return (\n    <div className={css.counter}>\n      <span className={css.counter__value}>{value}</span>\n\n      <div className={css.counter__controls}>\n        <button type=\"button\" onClick={handleDecrement}>\n          Decrease by 1\n        </button>\n        <button type=\"button\" onClick={handleIncrement}>\n          Increase by 1\n        </button>\n      </div>\n    </div>\n  );\n};\n\nexport default CounterSolution;",
+      ""
     ]
   },
   {

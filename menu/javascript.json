@@ -139,7 +139,8 @@
         "tasks": [
           { "title": "Task 1", "path": "" },
           { "title": "Task 2", "path": "" },
-          { "title": "Task 3", "path": "" }
+          { "title": "Task 3", "path": "" },
+          { "title": "Task 4", "path": "" }
         ]
       },
       {
@@ -156,8 +157,7 @@
     "title": "Numbers and Math",
     "children": [
       {
-        "title": "Math.*",
-
+        "title": "Basics of Numbers",
         "tasks": [
           { "title": "Task 1", "path": "" },
           { "title": "Task 2", "path": "" },
@@ -165,7 +165,7 @@
         ]
       },
       {
-        "title": "Rounding",
+        "title": "Divisibility and Number Theory",
         "tasks": [
           { "title": "Task 1", "path": "" },
           { "title": "Task 2", "path": "" },
@@ -173,7 +173,47 @@
         ]
       },
       {
-        "title": "Number operations, random",
+        "title": "Algebra",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Geometry",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Combinatorics and Probability",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Sequences and Series",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Math Algorithms",
+        "tasks": [
+          { "title": "Task 1", "path": "" },
+          { "title": "Task 2", "path": "" },
+          { "title": "Task 3", "path": "" }
+        ]
+      },
+      {
+        "title": "Graphs and Visualization",
         "tasks": [
           { "title": "Task 1", "path": "" },
           { "title": "Task 2", "path": "" },
